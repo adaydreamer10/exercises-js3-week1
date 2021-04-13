@@ -11,9 +11,9 @@ function removeVowels(word) {
       character === "e" ||
       character === "u"
     ) {
-      result.push(character);
-    } else {
       result.push("_");
+    } else {
+      result.push(character);
     }
   });
 
@@ -33,6 +33,7 @@ function removeVowelsForWords(words) {
   Let's trace this piece of code - what is the value of result with this input
   */
   var result = removeVowels('samuel');
+  console.log(result)
 
 
 
@@ -41,4 +42,7 @@ function removeVowelsForWords(words) {
 	Trace what happens if we call the function removeVowelsForWords with this input: ["Irina", "Etza", "Daniel"]
     expected output?:
 */
+
+var result2 = removeVowelsForWords(["Irina", "Etza", "Daniel"])
+console.log(result2)
 

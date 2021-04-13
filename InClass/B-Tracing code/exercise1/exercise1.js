@@ -1,14 +1,17 @@
 function greetPeople(people) {
-  var greeting = "He";
-  greeting = greeting + "llo";
-  greeting = greeting + " ";
+  var greeting = "Hello ";
+  // greeting = greeting + "llo";
+  // greeting = greeting + " ";
 
   people.forEach(function(person) {
-    greeting = greeting + person;
-	console.log(greeting);
+  //   greeting = greeting + person;
+  // console.log(greeting);
+       sayHello = greeting + person;
+       console.log(sayHello)
+
   });
 
-  return greeting;
+  return sayHello;
 }
 
 /*
